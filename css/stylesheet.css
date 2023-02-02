@@ -2,8 +2,24 @@
 /*rgb() for red h1*/
 h1{
     color: #0000EE;
+    margin: 0, 10px
 }
 /* background of whoe page  */
 body{
     background-color: #DFE2E7;
 }
+
+nav{
+    
+    font-size: 18px;
+    background-color: #003c71;
+    text-align: center;
+    padding: 6px;
+    margin: 0, 10px;
+}
+nav a{
+    color:#DFE2E7;
+    padding: 10px;
+    font-weight: bold;
+}
+
