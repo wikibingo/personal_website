@@ -1,26 +1,77 @@
 /*hex code for blue p*/
 /*rgb() for red h1*/
+
+
+/* General ------------------------------------------------------------ */
+body{
+    background-color: #DFE2E7;
+}
+
+/* Header ------------------------------------------------------------ */
+
+.flex-header{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .h1_title{
     color: #0000EE;
     margin: 0, 10px;
     font-family: 'Montserrat', sans-serif;
 }
-/* background of whoe page  */
-body{
-    background-color: #DFE2E7;
+
+.nav_bar{
+    background-color: #003c71;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 4px;
+    flex: 1 0 100%;
 }
 
-nav{
-    
+.nav_bar > a{
+    font-size: 18px;
+    color:#DFE2E7;
+    font-weight: bold;   
+}
+
+
+/* Main ------------------------------------------------------------ */
+
+.grid_container{
+    display:grid;
+    grid-template-columns: .7,.3;
+ 
+}
+
+.grid_item2{
+    grid-column: 2;
+}
+
+.grid_item3{
+    grid-column: 1;
+}
+
+.grid-container{
+    display: grid;
+}
+
+
+/* Footer ------------------------------------------------------------ */
+.footer{
+    display:flex;
     font-size: 18px;
     background-color: #003c71;
-    text-align: center;
-    padding: 6px;
-    margin: 0, 10px;
-}
-nav a{
+    align-items: center;
+    justify-content: center;       
     color:#DFE2E7;
-    padding: 10px;
     font-weight: bold;
+    height: 1.3em;
+    border-radius: 4px;
 }
+
+
 
