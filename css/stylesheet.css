@@ -1,7 +1,6 @@
 /*hex code for blue p*/
 /*rgb() for red h1*/
 
-
 /* General ------------------------------------------------------------ */
 body{
     background-color: #DFE2E7;
@@ -37,8 +36,20 @@ body{
     color:#DFE2E7;
     font-weight: bold;   
 }
+.grid-table{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
 
+}
 
+.header_grid_item{
+    align-self: center;
+    justify-self: center;
+}
+.bcit_logo{
+    transform: scale(0.5);
+}
 /* Main ------------------------------------------------------------ */
 
 .grid_container{
@@ -72,6 +83,5 @@ body{
     height: 1.3em;
     border-radius: 4px;
 }
-
 
 
