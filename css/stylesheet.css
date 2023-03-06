@@ -45,8 +45,7 @@ body{
 
 .header_grid_item{
     align-self: center;
-    justify-self: center;
-    
+    justify-self: center;   
 }
 .bcit_logo{
     transform: scale(0.5);
@@ -71,33 +70,47 @@ body{
     display: grid;
 }
 
-.list li{
-    list-style-type: none;
-}
 
 @media screen and (max-width: 600px) {
     .nav_bar {
         flex-direction: column;
         align-items: center;
     }
-    .first_course{
-        flex-direction: column;
-        align-items: center;
+    .header_grid_item{
+        grid-column: 2 / 4;
+    }
+    .course > p {
+        grid-column: 1 / -1;
+    }
+    .course_year{
+        grid-row: 2 / 3;
     }
 
-}
+    .course a{
+        grid-column: 1 / 3;
+    }
+}   
 
-.first_course{
+.course{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: auto;
     align-items: baseline;
+    padding:10px;
+    border-bottom: 2px solid black;
 }
 
-.a{
-    display:grid;
-    padding: 10px;
-    align-items: end;
+.course:last-child {
+    border-bottom: none;
+  }
+
+.course > p{
+    margin: 10px 0;
+    align-self: end;
+}
+
+.course > a{
+    margin: 10px 0;
 }
 
 /* Footer ------------------------------------------------------------ */
